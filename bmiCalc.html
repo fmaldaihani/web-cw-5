@@ -62,6 +62,30 @@
               يا للهول! 😲          أكبر من أو يساوي 30
               لا أدري! 🤷🏻‍♀️                   أي شي ثاني
         */
+       let height=document.getElementById('height').value;
+       let weight= document.getElementById('weight').value;
+       let BMI= (weight/ (height*height) )
+
+       if ( BMI < 20)
+       {
+         alert('you are very skinny');
+       }
+       else if (BMI <=29 || BMI > 20)
+       {
+         alert('your weight is good ');
+       }
+       else if ( BMI >= 30)
+       {
+         alert('OH MY GOD');
+       }
+       else 
+       {
+         alert('I DONOT KNOW');
+       }
+
+       
+
+
       }
     </script>
   </body>
