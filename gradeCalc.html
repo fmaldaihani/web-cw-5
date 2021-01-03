@@ -35,7 +35,58 @@
 
     -->
 
-    <!-- ابدأ الحل ↓↓↓ -->
+    <!-- ابدأ الحل ↓↓↓ --> 
+    <script >
+      function submit() {
+
+      
+
+      
+let Quizes= parseInt(document.getElementById('Quizes').value)
+let Midterm= parseInt(document.getElementById('Midterm').value)
+let FinalTest= parseInt(document.getElementById('FinalTest').value)
+let Oral= parseInt(document.getElementById('Oral').value)
+let total= Quizes+ Midterm + FinalTest + Oral
+
+
+if ( total<=100 && total >= 90 )
+  { document.getElementById('total_grades').innerText= total
+  document.getElementById('final_grade').innerText= ('A')
+
+}
+
+else if(total>= 80 )
+{  document.getElementById('total_grades').innerText= total
+   document.getElementById('final_grade').innerText= ('B')
+
+}
+
+else if (total>=70)
+{
+  document.getElementById('total_grades').innerText= total
+   document.getElementById('final_grade').innerText= ('C')
+
+}
+
+else if (total>=60)
+{
+  document.getElementById('total_grades').innerText= total
+   document.getElementById('final_grade').innerText= ('D')
+
+}
+ 
+else {
+  document.getElementById('total_grades').innerText= total
+   document.getElementById('final_grade').innerText= ('F')
+
+}
+
+
+
+}
+    
+    
+    </script>
     <div class="wrapper">
       <h1>الحاسبة 🔢</h1>
 
